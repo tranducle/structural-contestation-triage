@@ -1,0 +1,10 @@
+{
+  "machine_name": "MacBook Air",
+  "machine_model": "Mac14,15",
+  "chip": "Apple M2",
+  "cpu_configuration": "8 cores, 4 performance and 4 efficiency",
+  "memory": "16 GB",
+  "operating_system": "macOS 26.7.1",
+  "build": "25G241",
+  "privacy_note": "Serial number, hardware UUID, and provisioning identifiers are intentionally omitted."
+}

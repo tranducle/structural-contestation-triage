@@ -1,0 +1,17 @@
+{
+  "benign_extension": {
+    "n": 80,
+    "stratum": "benign_gate"
+  },
+  "disjoint_from_locked_and_each_other": true,
+  "locked_stimuli_rebuilt_identically": 160,
+  "population_strata": {
+    "benign_gate": 32378,
+    "benign_nogate": 295833,
+    "hostile_gate": 73138,
+    "hostile_nogate": 15432
+  },
+  "refit_reproduction_max_abs_diff": 0.0,
+  "screening_per_stratum": 10,
+  "seed": 20261023
+}

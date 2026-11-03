@@ -1,0 +1,530 @@
+{
+  "label": "OFFICIAL",
+  "models": {
+    "llama3.2:3b": {
+      "otrf": {
+        "analysed_events": 20,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "a80c4f17acd5"
+        ],
+        "parse_validity": {
+          "s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_spot_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_placebo_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_prov_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_spotprov_after_spot_injected": {
+            "calls": 20,
+            "valid": 20
+          }
+        },
+        "passed": true,
+        "planned_calls": 120,
+        "present_calls": 120,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      },
+      "salad": {
+        "analysed_alerts": 160,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "determinism": {
+          "byte_identical_response": 20,
+          "pairs": 20,
+          "same_disposition": 20
+        },
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "a80c4f17acd5"
+        ],
+        "parse_validity": {
+          "rep_s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s1_spot_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_spot_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_placebo_after_clean": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_placebo_after_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_spotstruct_after_spot_clean": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_spotstruct_after_spot_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_struct_after_clean": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_struct_after_injected": {
+            "calls": 40,
+            "valid": 40
+          }
+        },
+        "passed": true,
+        "planned_calls": 860,
+        "present_calls": 860,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "replicate_per_stratum": 5,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      }
+    },
+    "phi3:latest": {
+      "otrf": {
+        "analysed_events": 20,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "4f2222927938"
+        ],
+        "parse_validity": {
+          "s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_spot_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_placebo_after_injected": {
+            "calls": 20,
+            "valid": 18
+          },
+          "s2_prov_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_spotprov_after_spot_injected": {
+            "calls": 19,
+            "valid": 19
+          }
+        },
+        "passed": true,
+        "planned_calls": 119,
+        "present_calls": 119,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      },
+      "salad": {
+        "analysed_alerts": 160,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "determinism": {
+          "byte_identical_response": 20,
+          "pairs": 20,
+          "same_disposition": 20
+        },
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "4f2222927938"
+        ],
+        "parse_validity": {
+          "rep_s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s1_spot_clean": {
+            "calls": 160,
+            "valid": 159
+          },
+          "s1_spot_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_placebo_after_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_spotstruct_after_spot_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_struct_after_injected": {
+            "calls": 40,
+            "valid": 40
+          }
+        },
+        "passed": true,
+        "planned_calls": 620,
+        "present_calls": 620,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "replicate_per_stratum": 5,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      }
+    },
+    "qwen2.5:3b": {
+      "otrf": {
+        "analysed_events": 20,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "357c53fb659c"
+        ],
+        "parse_validity": {
+          "s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_spot_injected": {
+            "calls": 20,
+            "valid": 19
+          },
+          "s2_placebo_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_prov_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_spotprov_after_spot_injected": {
+            "calls": 19,
+            "valid": 19
+          }
+        },
+        "passed": true,
+        "planned_calls": 119,
+        "present_calls": 119,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      },
+      "salad": {
+        "analysed_alerts": 160,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "determinism": {
+          "byte_identical_response": 20,
+          "pairs": 20,
+          "same_disposition": 20
+        },
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "357c53fb659c"
+        ],
+        "parse_validity": {
+          "rep_s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s1_spot_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_spot_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_placebo_after_clean": {
+            "calls": 79,
+            "valid": 79
+          },
+          "s2_placebo_after_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_spotstruct_after_spot_clean": {
+            "calls": 79,
+            "valid": 79
+          },
+          "s2_spotstruct_after_spot_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_struct_after_clean": {
+            "calls": 79,
+            "valid": 79
+          },
+          "s2_struct_after_injected": {
+            "calls": 40,
+            "valid": 40
+          }
+        },
+        "passed": true,
+        "planned_calls": 857,
+        "present_calls": 857,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "replicate_per_stratum": 5,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      }
+    },
+    "qwen2.5:7b": {
+      "otrf": {
+        "analysed_events": 20,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "845dbda0ea48"
+        ],
+        "parse_validity": {
+          "s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_spot_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_placebo_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_prov_after_injected": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s2_spotprov_after_spot_injected": {
+            "calls": 20,
+            "valid": 20
+          }
+        },
+        "passed": true,
+        "planned_calls": 120,
+        "present_calls": 120,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      },
+      "salad": {
+        "analysed_alerts": 160,
+        "decoding_options": [
+          {
+            "num_ctx": 4096,
+            "num_predict": 256,
+            "seed": 20261014,
+            "temperature": 0.0
+          }
+        ],
+        "determinism": {
+          "byte_identical_response": 20,
+          "pairs": 20,
+          "same_disposition": 20
+        },
+        "duplicate_records": 0,
+        "label_leak_count": 0,
+        "label_leaks": [],
+        "missing": [],
+        "missing_count": 0,
+        "model_digests": [
+          "845dbda0ea48"
+        ],
+        "parse_validity": {
+          "rep_s1_clean": {
+            "calls": 20,
+            "valid": 20
+          },
+          "s1_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s1_spot_clean": {
+            "calls": 160,
+            "valid": 160
+          },
+          "s1_spot_injected": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_placebo_after_clean": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_placebo_after_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_spotstruct_after_spot_clean": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_spotstruct_after_spot_injected": {
+            "calls": 40,
+            "valid": 40
+          },
+          "s2_struct_after_clean": {
+            "calls": 80,
+            "valid": 80
+          },
+          "s2_struct_after_injected": {
+            "calls": 40,
+            "valid": 40
+          }
+        },
+        "passed": true,
+        "planned_calls": 860,
+        "present_calls": 860,
+        "prompt_drift": [],
+        "prompt_drift_count": 0,
+        "replicate_per_stratum": 5,
+        "stored_hash_mismatch_count": 0,
+        "unexpected": [],
+        "unexpected_count": 0
+      }
+    }
+  },
+  "passed": true
+}

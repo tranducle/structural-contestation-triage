@@ -1,0 +1,50 @@
+{
+  "excluded_label_derived_fields": [
+    "alert_type",
+    "severity",
+    "confidence",
+    "mitre_tactic",
+    "mitre_technique",
+    "kill_chain_phase",
+    "attack_category",
+    "triage_decision",
+    "priority_score",
+    "difficulty_level",
+    "alert_description",
+    "is_malicious",
+    "correlation_key"
+  ],
+  "per_stratum": 40,
+  "pitsa_alpha": 0.25,
+  "pitsa_threshold": 0.7191718805389977,
+  "population_strata": {
+    "benign_gate": 32378,
+    "benign_nogate": 295833,
+    "hostile_gate": 73138,
+    "hostile_nogate": 15432
+  },
+  "refit_reproduction_max_abs_diff": 0.0,
+  "sample_attack_category_mix": {
+    "DDoS": 17,
+    "DoS": 19,
+    "Exploits": 8,
+    "Fuzzers": 1,
+    "Generic": 6,
+    "Port Scanning": 26,
+    "Reconnaissance": 2,
+    "Web Attacks": 1
+  },
+  "sample_source_mix": {
+    "CICIDS2017": 130,
+    "UNSW_NB15": 30
+  },
+  "seed": 20261022,
+  "test_gate_fpr": 0.09864995384066957,
+  "test_gate_tpr": 0.8257649316924467,
+  "test_positive_rows": 88570,
+  "test_rows": 416781,
+  "train_label_totals": {
+    "0": 1531638,
+    "1": 413249
+  }
+}

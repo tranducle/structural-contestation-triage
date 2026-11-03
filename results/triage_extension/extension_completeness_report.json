@@ -1,0 +1,415 @@
+{
+  "added_model": "mistral:7b",
+  "label": "OFFICIAL",
+  "models": {
+    "llama3.2:3b": {
+      "base_model_digests": [
+        "a80c4f17acd5"
+      ],
+      "base_overlap": [],
+      "base_overlap_count": 0,
+      "base_records": 860,
+      "decoding_matches_base": true,
+      "decoding_options": [
+        {
+          "num_ctx": 4096,
+          "num_predict": 256,
+          "seed": 20261014,
+          "temperature": 0.0
+        }
+      ],
+      "digest_matches_base": true,
+      "duplicate_records": 0,
+      "label_leak_count": 0,
+      "label_leaks": [],
+      "missing": [],
+      "missing_count": 0,
+      "model_digests": [
+        "a80c4f17acd5"
+      ],
+      "parse_validity": {
+        "s1_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_mplacebo_after_clean": {
+          "calls": 160,
+          "valid": 160
+        },
+        "s2_mplacebo_after_injected": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_mplacebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_placebo_after_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_placebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_spotstruct_after_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_spotstruct_after_spot_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_struct_after_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_struct_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        }
+      },
+      "passed": true,
+      "planned_calls": 920,
+      "present_calls": 920,
+      "prompt_drift": [],
+      "prompt_drift_count": 0,
+      "stored_hash_mismatch_count": 0,
+      "unexpected": [],
+      "unexpected_count": 0
+    },
+    "mistral:7b": {
+      "base_model_digests": [
+        "6577803aa9a0"
+      ],
+      "base_overlap": [],
+      "base_overlap_count": 0,
+      "base_records": 613,
+      "decoding_matches_base": true,
+      "decoding_options": [
+        {
+          "num_ctx": 4096,
+          "num_predict": 256,
+          "seed": 20261014,
+          "temperature": 0.0
+        }
+      ],
+      "digest_matches_base": true,
+      "duplicate_records": 0,
+      "label_leak_count": 0,
+      "label_leaks": [],
+      "missing": [],
+      "missing_count": 0,
+      "model_digests": [
+        "6577803aa9a0"
+      ],
+      "parse_validity": {
+        "s1_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_mplacebo_after_injected": {
+          "calls": 40,
+          "valid": 31
+        },
+        "s2_mplacebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 39
+        },
+        "s2_placebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_spotstruct_after_spot_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_struct_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        }
+      },
+      "passed": true,
+      "planned_calls": 520,
+      "present_calls": 520,
+      "prompt_drift": [],
+      "prompt_drift_count": 0,
+      "stored_hash_mismatch_count": 0,
+      "unexpected": [],
+      "unexpected_count": 0
+    },
+    "phi3:latest": {
+      "base_model_digests": [
+        "4f2222927938"
+      ],
+      "base_overlap": [],
+      "base_overlap_count": 0,
+      "base_records": 620,
+      "decoding_matches_base": true,
+      "decoding_options": [
+        {
+          "num_ctx": 4096,
+          "num_predict": 256,
+          "seed": 20261014,
+          "temperature": 0.0
+        }
+      ],
+      "digest_matches_base": true,
+      "duplicate_records": 0,
+      "label_leak_count": 0,
+      "label_leaks": [],
+      "missing": [],
+      "missing_count": 0,
+      "model_digests": [
+        "4f2222927938"
+      ],
+      "parse_validity": {
+        "s1_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_mplacebo_after_injected": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_mplacebo_after_injected_f2": {
+          "calls": 33,
+          "valid": 33
+        },
+        "s2_placebo_after_injected_f2": {
+          "calls": 33,
+          "valid": 33
+        },
+        "s2_spotstruct_after_spot_injected_f2": {
+          "calls": 29,
+          "valid": 18
+        },
+        "s2_struct_after_injected_f2": {
+          "calls": 33,
+          "valid": 20
+        }
+      },
+      "passed": true,
+      "planned_calls": 488,
+      "present_calls": 488,
+      "prompt_drift": [],
+      "prompt_drift_count": 0,
+      "stored_hash_mismatch_count": 0,
+      "unexpected": [],
+      "unexpected_count": 0
+    },
+    "qwen2.5:3b": {
+      "base_model_digests": [
+        "357c53fb659c"
+      ],
+      "base_overlap": [],
+      "base_overlap_count": 0,
+      "base_records": 857,
+      "decoding_matches_base": true,
+      "decoding_options": [
+        {
+          "num_ctx": 4096,
+          "num_predict": 256,
+          "seed": 20261014,
+          "temperature": 0.0
+        }
+      ],
+      "digest_matches_base": true,
+      "duplicate_records": 0,
+      "label_leak_count": 0,
+      "label_leaks": [],
+      "missing": [],
+      "missing_count": 0,
+      "model_digests": [
+        "357c53fb659c"
+      ],
+      "parse_validity": {
+        "s1_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_mplacebo_after_clean": {
+          "calls": 158,
+          "valid": 158
+        },
+        "s2_mplacebo_after_injected": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_mplacebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_placebo_after_clean": {
+          "calls": 79,
+          "valid": 79
+        },
+        "s2_placebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_spotstruct_after_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_spotstruct_after_spot_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_struct_after_clean": {
+          "calls": 79,
+          "valid": 79
+        },
+        "s2_struct_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        }
+      },
+      "passed": true,
+      "planned_calls": 916,
+      "present_calls": 916,
+      "prompt_drift": [],
+      "prompt_drift_count": 0,
+      "stored_hash_mismatch_count": 0,
+      "unexpected": [],
+      "unexpected_count": 0
+    },
+    "qwen2.5:7b": {
+      "base_model_digests": [
+        "845dbda0ea48"
+      ],
+      "base_overlap": [],
+      "base_overlap_count": 0,
+      "base_records": 860,
+      "decoding_matches_base": true,
+      "decoding_options": [
+        {
+          "num_ctx": 4096,
+          "num_predict": 256,
+          "seed": 20261014,
+          "temperature": 0.0
+        }
+      ],
+      "digest_matches_base": true,
+      "duplicate_records": 0,
+      "label_leak_count": 0,
+      "label_leaks": [],
+      "missing": [],
+      "missing_count": 0,
+      "model_digests": [
+        "845dbda0ea48"
+      ],
+      "parse_validity": {
+        "s1_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s1_spot_injected_f2": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_mplacebo_after_clean": {
+          "calls": 160,
+          "valid": 160
+        },
+        "s2_mplacebo_after_injected": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_mplacebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_placebo_after_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_placebo_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_spotstruct_after_spot_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_spotstruct_after_spot_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        },
+        "s2_struct_after_clean": {
+          "calls": 80,
+          "valid": 80
+        },
+        "s2_struct_after_injected_f2": {
+          "calls": 40,
+          "valid": 40
+        }
+      },
+      "passed": true,
+      "planned_calls": 920,
+      "present_calls": 920,
+      "prompt_drift": [],
+      "prompt_drift_count": 0,
+      "stored_hash_mismatch_count": 0,
+      "unexpected": [],
+      "unexpected_count": 0
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "base_stores": [
+    "../outputs/llm_runs/salad_responses.jsonl"
+  ],
+  "benign_extension_stimuli_sha256": "8ca1b2eafaa209e90da4801fb2f1e799564f57079f94a9eb3a5dd8da5dfb7a91",
+  "decoding": {
+    "num_ctx": 4096,
+    "num_predict": 256,
+    "seed": 20261014,
+    "temperature": 0.0
+  },
+  "limit_per_stratum": null,
+  "locked_stimuli_sha256": "23187b9c0e6fa151dd45a1517e9fcf53f85c88933cf85dba9260cef5c2fae429",
+  "models": {
+    "phi3:latest": "4f2222927938"
+  },
+  "ollama_version": "0.13.5",
+  "parts": [
+    "mplacebo"
+  ]
+}

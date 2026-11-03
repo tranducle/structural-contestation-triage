@@ -1,0 +1,13 @@
+{
+  "category_counts": {
+    "credential_access": 6,
+    "execution": 3,
+    "lateral_movement": 6,
+    "persistence": 5
+  },
+  "created_total": 20,
+  "label_scope": "controlled attack conditioned scenario set, not a population accuracy benchmark",
+  "requested_total": 20,
+  "stimuli_file": "data/stimuli/otrf_high_confidence_stimuli.jsonl",
+  "unique_archives": 20
+}

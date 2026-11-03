@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-15T07:25:35",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1",
+    "statsmodels": "0.14.6",
+    "torch": "2.8.0",
+    "transformers": "4.57.3"
+  },
+  "seed_policy": [
+    20261014,
+    20261015,
+    20261016,
+    20261017,
+    20261018
+  ],
+  "ollama_version": "0.13.5",
+  "model_manifest": "data/v2/manifests/ollama_model_manifest_v2.json",
+  "hardware_manifest": "configs/hardware_manifest.json"
+}

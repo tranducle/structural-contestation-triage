@@ -1,0 +1,16 @@
+{
+  "decoding": {
+    "num_ctx": 4096,
+    "num_predict": 256,
+    "seed": 20261014,
+    "temperature": 0.0
+  },
+  "limit_per_stratum": null,
+  "models": {
+    "mistral:7b": "6577803aa9a0"
+  },
+  "n_stimuli": 160,
+  "ollama_version": "0.13.5",
+  "replicate_per_stratum": 5,
+  "stimuli_sha256": "23187b9c0e6fa151dd45a1517e9fcf53f85c88933cf85dba9260cef5c2fae429"
+}

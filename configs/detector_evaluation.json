@@ -1,0 +1,51 @@
+{
+  "version": "2.0",
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "train_sample_rows": 150000,
+  "random_forest_train_rows": 120000,
+  "validation_max_fpr": 0.1,
+  "threshold_objective": "f1",
+  "llr_alpha_grid": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "sgd_alpha_grid": [
+    1e-05,
+    0.0001,
+    0.001
+  ],
+  "naive_bayes_alpha_grid": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "random_forest_depth_grid": [
+    8,
+    12,
+    16
+  ],
+  "random_forest_trees": 80,
+  "bootstrap_resamples": 1000,
+  "attack_clause_counts": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "full_attack_clause_count": 4,
+  "ollama_models": [
+    "phi3:latest",
+    "qwen2.5:3b",
+    "llama3.2:3b"
+  ],
+  "llm_temperature": 0.0,
+  "llm_seed": 20261014,
+  "llm_stimulus_target": 20,
+  "claim_policy": "Only results that pass the relevant scientific gate may enter the manuscript."
+}

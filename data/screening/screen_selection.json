@@ -1,0 +1,59 @@
+{
+  "decoding": {
+    "num_ctx": 4096,
+    "num_predict": 256,
+    "seed": 20261014,
+    "temperature": 0.0
+  },
+  "digests": {
+    "granite3.3:8b": "fd429f23b909",
+    "llama3.1:8b": "46e0c10c039e",
+    "mistral:7b": "6577803aa9a0"
+  },
+  "notes": {},
+  "ollama_version": "0.13.5",
+  "rule": {
+    "candidates": [
+      "llama3.1:8b",
+      "mistral:7b",
+      "granite3.3:8b"
+    ],
+    "criterion": "largest unweighted Youden J; ties to lower median latency",
+    "min_parse_validity": 0.95,
+    "per_stratum": 10
+  },
+  "screen_stimuli_sha256": "9a2ff775fe7bc47e3fa5178a119cb13b3998906fce9340a8e460c0475172c535",
+  "selected": "mistral:7b",
+  "summary": {
+    "granite3.3:8b": {
+      "benign_escalation_rate": 1.0,
+      "hostile_escalation_rate": 1.0,
+      "median_latency_seconds": 15.403786187031073,
+      "n": 40,
+      "n_benign": 20,
+      "n_hostile": 20,
+      "parse_validity": 1.0,
+      "youden_j": 0.0
+    },
+    "llama3.1:8b": {
+      "benign_escalation_rate": 0.75,
+      "hostile_escalation_rate": 0.7,
+      "median_latency_seconds": 11.90343829151243,
+      "n": 40,
+      "n_benign": 20,
+      "n_hostile": 20,
+      "parse_validity": 1.0,
+      "youden_j": -0.050000000000000044
+    },
+    "mistral:7b": {
+      "benign_escalation_rate": 0.95,
+      "hostile_escalation_rate": 0.95,
+      "median_latency_seconds": 14.723511249991134,
+      "n": 40,
+      "n_benign": 20,
+      "n_hostile": 20,
+      "parse_validity": 1.0,
+      "youden_j": 0.0
+    }
+  }
+}

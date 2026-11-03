@@ -1,0 +1,102 @@
+{
+ "written_utc": "2026-10-22T23:43:11Z",
+ "purpose": "Fix the v3 analysis code, hypotheses and tests before any official instruction-model response is analysed.",
+ "official_batch_started_utc": "2026-10-22T21:50:16Z",
+ "official_salad_records_at_lock": 396,
+ "official_analysis_run": false,
+ "disclosure": "Prompt builders and runners (llm_common.py, salad_llm_runner.py, otrf_probe_runner.py) were last modified before the batch started. The analysis modules (llm_stats.py, llm_policies.py, llm_loss.py, llm_tables.py, analyze_llm_v3.py, make_llm_macros.py) were last modified after the batch started but before any official response was analysed; until this lock only record counts and runner failures were inspected. The hypotheses were not preregistered with a third party.",
+ "confirmatory_hypotheses": [
+  "H1_injection_effect_unassisted",
+  "H2_structural_vs_placebo_recall",
+  "H3_structural_vs_placebo_false_escalation",
+  "H4_spotlight_vs_plain_recall_attacked",
+  "H5_spotlight_structural_vs_spotlight_recall"
+ ],
+ "files": [
+  {
+   "path": "data/stimuli/otrf_high_confidence_stimuli.jsonl",
+   "sha256": "843504f9d1beeebc76b7660c3022e160844b94198ecef14c84963b73f912b883",
+   "modified_utc": "2026-10-15T12:41:29Z"
+  },
+  {
+   "path": "data/stimuli/salad_llm_stimuli.jsonl",
+   "sha256": "23187b9c0e6fa151dd45a1517e9fcf53f85c88933cf85dba9260cef5c2fae429",
+   "modified_utc": "2026-10-22T21:13:12Z"
+  },
+  {
+   "path": "data/stimuli/salad_llm_stimuli_manifest.json",
+   "sha256": "66ab253bda85e914e01b967030f0f281905ec31563f673475f3ab9223fb8c609",
+   "modified_utc": "2026-10-22T21:13:12Z"
+  },
+  {
+   "path": "scripts/run_main_study.sh",
+   "sha256": "36e1e8739104b47f4c4104c0aaf0861a74bf7917a42fc96bd01df2532956885e",
+   "modified_utc": "2026-10-22T21:49:46Z"
+  },
+  {
+   "path": "experiments/analyze_triage_study.py",
+   "sha256": "ae6e205c26e35b56e7f73654d76f6a091f49bb5703b5680a5d9b90a111f08864",
+   "modified_utc": "2026-10-22T23:13:43Z"
+  },
+  {
+   "path": "src/llm_common.py",
+   "sha256": "8a6a9117fdf36583f78d60c8ad7b44142ebd1495090aa0e16c3b79bc25506814",
+   "modified_utc": "2026-10-22T21:45:34Z"
+  },
+  {
+   "path": "src/llm_loss.py",
+   "sha256": "decaf533062c1d0ab3cc3e4ed089b3bd90276fc9574c130b1e77081f596b024a",
+   "modified_utc": "2026-10-22T23:11:24Z"
+  },
+  {
+   "path": "src/llm_policies.py",
+   "sha256": "92b98345d24158d014dfcd231a225608234179dc98199fc4d1a75a0b007125d8",
+   "modified_utc": "2026-10-22T22:11:46Z"
+  },
+  {
+   "path": "src/llm_stats.py",
+   "sha256": "dac29e7f4548e6628a1d32f05ef61d5a8e43a903928eab610562dff60c0e11fc",
+   "modified_utc": "2026-10-22T22:09:57Z"
+  },
+  {
+   "path": "src/llm_tables.py",
+   "sha256": "510c9e7cec39d74370f4279941dbf148287b252013c9310ccebf2ff0a4147396",
+   "modified_utc": "2026-10-22T23:11:36Z"
+  },
+  {
+   "path": "scripts/make_triage_macros.py",
+   "sha256": "443e363a725f95622fa48e748086f31e3a4498450e760729bdaa14e904576c78",
+   "modified_utc": "2026-10-22T23:30:06Z"
+  },
+  {
+   "path": "experiments/otrf_probe_runner.py",
+   "sha256": "55d3209b8ed60c01e0806fde22c48d9e147b4592139bb3733d5bc38187b0a228",
+   "modified_utc": "2026-10-22T21:49:26Z"
+  },
+  {
+   "path": "experiments/salad_triage_runner.py",
+   "sha256": "b61f25c4f5190b022d9a00fee311c68ac47ffadb6d8047978c6b448f40aafb59",
+   "modified_utc": "2026-10-22T21:49:26Z"
+  },
+  {
+   "path": "scripts/build_salad_stimuli.py",
+   "sha256": "164d032be2b82424744b386bb7a390c02517da4ef3e2aaf07dab1c79177ac8a4",
+   "modified_utc": "2026-10-22T21:12:35Z"
+  },
+  {
+   "path": "tests/test_llm_analysis.py",
+   "sha256": "5d65996735f82ad99fd8e2217ce1f25f2c8d44799db91a3c01d2868a3890ebfa",
+   "modified_utc": "2026-10-22T23:15:37Z"
+  },
+  {
+   "path": "tests/test_llm_macros.py",
+   "sha256": "0878c6a2dd92a74fa3b19eef90991fa0ba18b4f9dbc5419adb6b691a11854722",
+   "modified_utc": "2026-10-22T23:29:34Z"
+  },
+  {
+   "path": "tests/test_prompt_integrity.py",
+   "sha256": "00ccc5f62a2c9416bcd63ee37739d78bba74059a6c7f775c1d2562ee4be3fe62",
+   "modified_utc": "2026-10-22T21:20:43Z"
+  }
+ ]
+}

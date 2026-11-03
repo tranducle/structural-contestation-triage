@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-10-15T07:25:22",
+  "datasets": [
+    {
+      "id": "SALAD_SOC",
+      "role": "primary_official_split_evaluation",
+      "source": {
+        "commit": "07ede61490b99363bf30d2f36a81da28ec6a4a51",
+        "remote": "https://github.com/nutthakorn7/SALAD-SOC.git"
+      },
+      "license": "CC BY 4.0",
+      "files": [
+        {
+          "split": "train",
+          "path": "data/external/salad_soc/salad_train.csv",
+          "sha256": "6b54a9a7a7dca2087db17bffd356af2ec92ed90d69c8787e353963cd2a8c0302",
+          "size_bytes": 644569755
+        },
+        {
+          "split": "validation",
+          "path": "data/external/salad_soc/salad_val.csv",
+          "sha256": "89a2fc58af37b8fb3a28e5b1f2e72ad37a16040be64434b8b7955cc720e6cd9b",
+          "size_bytes": 138118625
+        },
+        {
+          "split": "test",
+          "path": "data/external/salad_soc/salad_test.csv",
+          "sha256": "8195cb87a1ed4a7812a42b02036417015570b94c487ece665f788320922524ba",
+          "size_bytes": 138132869
+        }
+      ]
+    },
+    {
+      "id": "LMD_2023",
+      "role": "secondary_temporal_and_environment_shift_validation",
+      "source": {
+        "commit": "3eb643d7b6c9d2c6ba50933a427fc825cc509336",
+        "remote": "https://github.com/ChristosSmiliotopoulos/Lateral-Movement-Dataset%2D%2DLMD_Collections.git"
+      },
+      "label_semantics": {
+        "0": "Normal",
+        "1": "EoRS",
+        "2": "EoHT"
+      },
+      "files": [
+        {
+          "path": "data/external/lmd_2023/full-csv(Evaluated Titles).csv",
+          "sha256": "9f9f5e78d546576c80c6e3d442e354b7a112423c196ee87bd57238da192664b9",
+          "size_bytes": 472831540
+        }
+      ]
+    },
+    {
+      "id": "OTRF_SECURITY_DATASETS",
+      "role": "attack_replay_and_text_channel_stress_test_only",
+      "source": {
+        "commit": "d9d40ef123d2c87d5d3df28c96bcab4f0faccc87",
+        "remote": "https://github.com/OTRF/Security-Datasets.git"
+      },
+      "label_warning": "No independent event-level labels in v1; not licensed for primary accuracy claims",
+      "archive_count": 63
+    },
+    {
+      "id": "CISA_KEV",
+      "role": "deployment_context_only",
+      "files": [
+        {
+          "path": "data/datasets/cisa_kev/known_exploited_vulnerabilities.json",
+          "sha256": "136904f12e4c6762e526352e3a67ed7b28cd21b4d82bed9c91719ff2e94f2f28",
+          "size_bytes": 1780479
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+ "written_utc": "2026-10-23T13:44:42Z",
+ "purpose": "Fix the extension analysis code (tests, corrections, metrics, loss blocks, macro and table writers) before any official extension answer is analysed.",
+ "extends": "configs/extension_analysis_lock.json",
+ "original_lock_verified": "17 of 17 files in configs/triage_analysis_lock.json match their recorded sha256 at the time of writing",
+ "extension_lock_verified": "10 of 10 files in analysis_lock_ext.json and its read-only input match their recorded sha256 at the time of writing",
+ "official_extension_analysis_run": false,
+ "official_extension_records_at_lock": 348,
+ "official_extension_records_note": "The official batch was running when this lock was written. Only record counts and runner failure lines were inspected; no official extension answer was parsed, scored or analysed.",
+ "files": [
+  {
+   "path": "src/ext_policies.py",
+   "sha256": "c6e6ee79206a6ac87705ff13e65dcedaeeb6019c8847a9544ae063d2316e99ca",
+   "modified_utc": "2026-10-23T12:45:05Z",
+   "role": "Extension policies (adds the matched placebo M to the locked SALAD policies) and the locked policy rules applied to extension answers"
+  },
+  {
+   "path": "src/ext_metrics.py",
+   "sha256": "64a7b513f6fd188a0e3ca9126058f1ff02a2033657e91fada7f03503bdebc976",
+   "modified_utc": "2026-10-23T12:48:21Z",
+   "role": "Rates per stratum with exact Clopper-Pearson intervals, weighted rates, the union bound for a weighted zero, and McNemar-style paired tests on extension answers"
+  },
+  {
+   "path": "experiments/analyze_extension_study.py",
+   "sha256": "6397181cb2ccb63b783d6414a79da0b2de803fcd095d56dee737babf1ab03b05",
+   "modified_utc": "2026-10-23T13:40:52Z",
+   "role": "Runs the extension family (R1 to R5 for an added model, X1 to X6 for every model, Holm over 35 or 24 pairs), the exploratory tests Y1 to Y5, the loss blocks and the G4-ext checks"
+  },
+  {
+   "path": "scripts/make_extension_macros.py",
+   "sha256": "480e61a340c684db3fca9169d9cc91e5d5a6f6acff4a6b009ec213d9f9bf4581",
+   "modified_utc": "2026-10-23T13:03:10Z",
+   "role": "Writes every extension number as a \\val{key} macro and checks (G5) that each manuscript key resolves"
+  },
+  {
+   "path": "scripts/make_extension_tables.py",
+   "sha256": "5376db4b15caf3e428baf8251a0de8ed60714deaec0befe00d804714bf8bad8b",
+   "modified_utc": "2026-10-23T13:39:36Z",
+   "role": "Writes the eight extension tables as \\val{key} references; computes nothing"
+  },
+  {
+   "path": "tests/test_ext_analysis.py",
+   "sha256": "012701de65c495846bd0cb54a72517b7c3ceea1f14a7115e7f231b58729853db",
+   "modified_utc": "2026-10-23T13:07:18Z",
+   "role": "Extension gate tests on SMOKE and synthetic data"
+  },
+  {
+   "path": "tests/test_ext_tables.py",
+   "sha256": "bf4bf2b12b7dafd3a4de1f48bce5ed4e8e16acf9826624c77889604f0e62af60",
+   "modified_utc": "2026-10-23T13:38:44Z",
+   "role": "Table-generator refusal paths and the wrapped tie cell"
+  }
+ ],
+ "test_run": "91 passed in 7.82s",
+ "smoke_artifacts": [
+  {
+   "path": "data/v3/outputs/smoke_ext/SMOKE_salad_ext_responses.jsonl",
+   "sha256": "9c16290b38d54d0e8301c118bfd7c7e50b64bd712da5d4efeec0a13d4a1bced5"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/SMOKE_salad_ext_responses_manifest_llama3-2-3b_mplacebo-f2-benign.json",
+   "sha256": "07b1dad5467cf7b1e5562946d90b30e8b97ace395f5413d7cee430a961533026"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/analysis/SMOKE_ext_g4_report.json",
+   "sha256": "c54a6dc76ba02fc195eccfca42d3a3a21d2510bcc6934c6edfc197b3e528f89a"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/analysis/SMOKE_llm_ext_analysis.json",
+   "sha256": "8f1277513a3fe4bc1033a40de02c33b460db0d6529e72ab85c5e108472b080a4"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/analysis/SMOKE_llm_ext_values.tex",
+   "sha256": "53b064825bb35c22244f8f75e0347664b4871a1bd48352ca08cc357ba7ea4813"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_discrimination.tex",
+   "sha256": "828526eea75e587c87b90735568b53e666bac09cf4f5a9a14f496281ec7cc552"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_exploratory.tex",
+   "sha256": "1eec561dcc9e71fdc5fde89668ecee401e76594860021a1541ba88e7628555c4"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_injection.tex",
+   "sha256": "f3c77ae68487e3d7dc95c8029a4fde4f6156bb3f048c6ed87432c4b7e9b95830"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_loss.tex",
+   "sha256": "2898aede413b326bcd0e436875378379acfa87599cd3056a56305b7e9149f3fb"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_models.tex",
+   "sha256": "641aef4cbc64d70befb0e1c2e8eb7c7ccbc6d7a3713bee4af9dd4f3dca3451b0"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_policies.tex",
+   "sha256": "f46224e69cfbd67ef2c0a5c34f61ef63b8ac9f0c0f74d8db26490de724973d9e"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_stage2.tex",
+   "sha256": "222089f5f395890ae3a1e52349ac31acaaad6ef152771bf4560971a8b9001253"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/table_ext_tests.tex",
+   "sha256": "cc297840402ca75f21ca706e64aadde9cce1dfdccc51d24677f7c1501c98e854"
+  },
+  {
+   "path": "data/v3/outputs/smoke_ext/tables/tables_ext_manifest.json",
+   "sha256": "ec3819acfd9737fd57751bdb4e4e8feac186e2f7abcc074fc4bb51047d715bfa"
+  }
+ ],
+ "disclosure": "Written and tested on SMOKE and synthetic data only. Changes made before this lock and after the extension design lock are listed in LOCK_ADDENDA.md, section Extension study. A later change to any file here needs a logged addendum; presentation changes (column widths, caption wording) may not move a number, a key or a test."
+}

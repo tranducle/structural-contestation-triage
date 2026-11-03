@@ -1,0 +1,14 @@
+{
+  "decoding": {
+    "num_ctx": 4096,
+    "num_predict": 256,
+    "seed": 20261014,
+    "temperature": 0.0
+  },
+  "models": {
+    "qwen2.5:7b": "845dbda0ea48"
+  },
+  "n_stimuli": 20,
+  "ollama_version": "0.13.5",
+  "stimuli_sha256": "843504f9d1beeebc76b7660c3022e160844b94198ecef14c84963b73f912b883"
+}
